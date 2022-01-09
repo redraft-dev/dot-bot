@@ -1,0 +1,5 @@
+# Builds
+backend/target
+
+# Dependencies
+node_modules
