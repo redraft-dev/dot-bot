@@ -1,3 +1,11 @@
+#![feature(proc_macro_hygiene, decl_macro)]
+extern crate rocket; 
+
+mod server;
+
+use server::start;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Starting server...");
+    start();
 }
