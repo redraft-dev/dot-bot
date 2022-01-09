@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug rust executable 'dotbot'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=./backend/Cargo.toml",
+                    "--bin=dot-bot-backend",
+                    "--package=dot-bot-backend"
+                ],
+                "filter": {
+                    "name": "dot-bot-backend",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}\\backend\\target\\debug\\dot-bot-backend.exe"
+        }
+    ]
+}
