@@ -1,5 +1,6 @@
 # Builds
 backend/target
+frontend/build
 
 # Dependencies
 node_modules
